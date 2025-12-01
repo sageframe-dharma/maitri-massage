@@ -213,6 +213,25 @@
       .treatment-image-wrap {
         text-align: center;
       }
+
+      /* Override circular frame for the specific HOW-section image (instance-8 defaults to circle) */
+      #image08.image-component > .frame {
+        width: auto !important;
+        border-radius: 12px !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+        display: block !important;
+      }
+
+      /* Ensure the img itself keeps a small corner radius (override global reset) */
+      .treatment-image {
+        display: block;
+        margin: 2rem auto !important;
+        width: 35% !important;
+        max-width: 560px;
+        border-radius: 12px !important;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.18) !important;
+      }
       u {
         text-decoration: underline;
       }
