@@ -217,9 +217,9 @@
       /* Override circular frame for the specific HOW-section image (instance-8 defaults to circle) */
       #image08.image-component > .frame {
         width: auto !important;
-        border-radius: 12px !important;
+        border-radius: 10px !important;
         box-shadow: none !important;
-        overflow: visible !important;
+        overflow: hidden !important;
         display: block !important;
       }
 
