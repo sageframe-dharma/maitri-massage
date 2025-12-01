@@ -232,6 +232,17 @@
         border-radius: 10px !important;
         box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important;
       }
+
+      /* Extra-specific override: ensure the frame and the actual <img> element apply clipping and shadow */
+      #image08.image-component > .frame > img,
+      #image08.image-component > .frame img.treatment-image {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px !important;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important;
+        -webkit-backface-visibility: hidden;
+      }
       u {
         text-decoration: underline;
       }
